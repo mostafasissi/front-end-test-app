@@ -6,6 +6,7 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The applicati
 
 Note: Before starting the application, ensure that the JSON server is running. Use the command npm run server to start the JSON server.
 # Project structure 
+```bash
 /frontend-test-app
 │
 ├── src
@@ -63,7 +64,7 @@ Note: Before starting the application, ensure that the JSON server is running. U
 ├── package.json
 ├── README.md
 └── ...
-
+```
 
 
 # Code scaffolding
