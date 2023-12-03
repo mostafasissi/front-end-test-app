@@ -53,8 +53,8 @@ Note: Before starting the application, ensure that the JSON server is running. U
 │   └── ...
 |
 ├── server
-│   └── servrr.ts
-|   └── db.json
+│   └── server.ts
+│   └── db.json
 ├── dist
 │   └── ...
 ├── node_modules
@@ -63,6 +63,7 @@ Note: Before starting the application, ensure that the JSON server is running. U
 ├── package.json
 ├── README.md
 └── ...
+
 
 
 # Code scaffolding
