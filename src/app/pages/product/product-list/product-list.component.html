@@ -1,0 +1,32 @@
+<h2>Liste des Produits</h2>
+
+<table class="table mb-4">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Description</th>
+      <th scope="col">Category</th>
+      <th scope="col">Action</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <th scope="row">{{ product.id }}</th>
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.category }}</td>
+      <td>
+        <button class="btn btn-danger" style="margin: 5px;" (click)="deleteProduct(product.id)">delete</button>
+        <button class="btn btn-info" [routerLink]="['/home/products/', product.id]">Edit</button>
+      </td>
+     
+    </tr>
+    
+  </tbody>
+</table>
+<hr/>
+<a type="button" class="btn btn-outline-success" routerLink="/home/products/new">New Product</a>
